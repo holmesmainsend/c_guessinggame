@@ -17,7 +17,10 @@ int main() {
             outOfGuesses = 1;
     }
 
-    printf("You won in %d guesses!\n", guessCounter);
+    if (outOfGuesses == 1)
+        printf("Out of guesses\n");
+    else
+        printf("You won in %d guess(es)!\n", guessCounter);
 
     return 0;
 }
